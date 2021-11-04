@@ -1,0 +1,8 @@
+#!/bin/bash
+
+PATH_REPO_YOCTO_LAYER="$( cd "$( dirname "$( dirname "$( readlink -f ${BASH_SOURCE[0]})" )" )" &> /dev/null && pwd )"
+PATH_YOCTO_BASE="$( dirname "$( dirname "$( readlink -f ${PATH_REPO_YOCTO_LAYER})" )" )"
+CONF_DIR="${PATH_REPO_YOCTO_LAYER}/conf"
+
+cd ${PATH_YOCTO_BASE}
+TEMPLATECONF=${CONF_DIR} source ${PATH_YOCTO_BASE}/yocto/poky/oe-init-build-env build

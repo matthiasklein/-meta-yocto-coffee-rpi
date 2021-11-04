@@ -1,0 +1,52 @@
+Yocto BSP for Raspberry Pi
+==========================
+
+Documentation
+-------------
+meta-raspberrypi Layer: https://meta-raspberrypi.readthedocs.io/en/latest/index.html
+
+Build requirements
+------------------
+```
+sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib g++-multilib build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping libsdl1.2-dev xterm libncurses5-dev
+```
+
+Configure shell and language
+----------------------------
+```
+sudo dpkg-reconfigure dash
+```
+
+=> Choose No to dash when prompted.
+
+```
+sudo dpkg-reconfigure locales
+```
+
+=> en_US.UTF-8
+
+
+Checkout the source code
+------------------------
+Initialise your project like this:
+```
+cd ~ && rm -fR yocto-coffee-rpi && mkdir yocto-coffee-rpi && cd yocto-coffee-rpi && repo init -u git@github.com:matthiasklein/meta-yocto-coffee-rpi.git -b master && repo sync
+```
+
+Build
+-----
+
+A regular Yocto build is started like this:
+
+```
+source setup-environment
+bitbake rpi-image-base
+```
+
+
+```
+cd yocto-qemu
+=> For building all images and all SDKs:
+./bsp-buildall.sh
+```
+
