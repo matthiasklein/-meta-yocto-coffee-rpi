@@ -3,6 +3,11 @@ MACHINE ??= "raspberrypi3"
 
 WKS_FILE ?= "sdimage-coffee.wks"
 
+DISTRO_FEATURES:append = " rauc"
+RAUC_KEYRING_FILE="${THISDIR}/../../../meta-distro-coffee/openssl-ca/dev/ca.cert.pem"
+RAUC_KEY_FILE="${THISDIR}/../../../meta-distro-coffee/openssl-ca/dev/private/development-1.key.pem"
+RAUC_CERT_FILE="${THISDIR}/../../../meta-distro-coffee/openssl-ca/dev/development-1.cert.pem"
+
 DL_DIR ?= "${BSPDIR}/downloads"
 SSTATE_DIR ?= "${BSPDIR}/sstate-cache"
 INHERIT += "rm_work"

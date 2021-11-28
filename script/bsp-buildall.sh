@@ -8,4 +8,4 @@ PATH_YOCTO_BASE="$( dirname "$( dirname "$( readlink -f ${PATH_REPO_YOCTO_LAYER}
 cd ${PATH_YOCTO_BASE}
 source setup-environment
 
-bitbake rpi-image-base
+bitbake coffee-image

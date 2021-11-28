@@ -40,7 +40,7 @@ A regular Yocto build is started like this:
 
 ```
 source setup-environment
-bitbake rpi-image-base
+bitbake coffee-image
 ```
 
 
