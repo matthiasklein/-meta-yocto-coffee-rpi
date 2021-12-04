@@ -29,11 +29,13 @@
 
   <project remote="github"
            name="matthiasklein/meta-distro-coffee.git"
+           pushurl="git@github.com:matthiasklein/meta-distro-coffee.git"
            path="yocto/meta-distro-coffee"/>
 
   <!-- Custom stuff -->
   <project remote="github"
            name="matthiasklein/meta-yocto-coffee-rpi.git"
+           pushurl="git@github.com:matthiasklein/meta-yocto-coffee-rpi.git"
            path="yocto/meta-yocto-coffee-rpi">
 
            <linkfile dest="README" src="README"/>
