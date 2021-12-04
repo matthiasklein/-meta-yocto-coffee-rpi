@@ -9,3 +9,5 @@ cd ${PATH_YOCTO_BASE}
 source setup-environment
 
 bitbake coffee-image
+bitbake coffee-image-bundle
+
