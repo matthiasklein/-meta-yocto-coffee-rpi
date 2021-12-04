@@ -11,3 +11,5 @@ source setup-environment
 bitbake coffee-image
 bitbake coffee-image-bundle
 
+bitbake coffee-image -c populate_sdk
+
