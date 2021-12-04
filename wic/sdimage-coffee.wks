@@ -7,7 +7,7 @@
 #       This would not be the case if the fstab was modified by WIC.
 
 part --align 4096 --size 20          --fstype=vfat --active                             --label uboot     --source bootimg-partition
-part --align 1024 --extra-space 300M --fstype=ext4 --mkfs-extraopts="-O ^metadata_csum" --label coffeea   --source rootfs
-part --align 1024 --extra-space 300M --fstype=ext4 --mkfs-extraopts="-O ^metadata_csum" --label coffeeb   --source rootfs
-part --align 1024 --fixed-size 200M  --fstype=ext4                                      --label workspace
+part --align 1024 --extra-space 500M --fstype=ext4 --mkfs-extraopts="-O ^metadata_csum" --label coffeea   --source rootfs
+part --align 1024 --extra-space 500M --fstype=ext4 --mkfs-extraopts="-O ^metadata_csum" --label coffeeb   --source rootfs
+part --align 1024 --fixed-size 1000M --fstype=ext4                                      --label workspace
 
