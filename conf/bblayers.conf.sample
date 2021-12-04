@@ -18,6 +18,7 @@ BBLAYERS = " \
   \
   ${BSPDIR}/yocto/meta-raspberrypi \
   ${BSPDIR}/yocto/meta-rauc \
+  ${BSPDIR}/yocto/meta-qt6 \
   \
   ${BSPDIR}/yocto/meta-distro-coffee \
   ${BSPDIR}/yocto/meta-yocto-coffee-rpi \

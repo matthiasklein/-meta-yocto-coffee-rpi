@@ -27,6 +27,11 @@
            name="rauc/meta-rauc.git"
            path="yocto/meta-rauc"/>
 
+  <project remote="code.qt"
+           revision="6.2"
+           name="yocto/meta-qt6.git"
+           path="yocto/meta-qt6"/>
+
   <project remote="github"
            name="matthiasklein/meta-distro-coffee.git"
            pushurl="git@github.com:matthiasklein/meta-distro-coffee.git"
