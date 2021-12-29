@@ -1,5 +1,5 @@
-#MACHINE ??= "raspberrypi0-wifi"
-MACHINE ??= "raspberrypi3-64"
+#MACHINE ??= "raspberrypi3-64"
+MACHINE ??= "raspberrypi0-2w-64"
 
 WKS_FILE ?= "sdimage-coffee.wks"
 
