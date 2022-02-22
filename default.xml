@@ -19,8 +19,8 @@
            name="meta-openembedded"
            path="yocto/meta-openembedded"/>
 
-  <project remote="yocto"
-           name="meta-raspberrypi"
+  <project remote="github"
+           name="agherzan/meta-raspberrypi"
            path="yocto/meta-raspberrypi"/>
 
   <project remote="github"
