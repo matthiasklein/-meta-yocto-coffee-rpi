@@ -30,7 +30,7 @@ Checkout the source code
 ------------------------
 Initialise your project like this:
 ```
-cd ~ && rm -fR yocto-coffee-rpi && mkdir yocto-coffee-rpi && cd yocto-coffee-rpi && repo init -u git@github.com:matthiasklein/meta-yocto-coffee-rpi.git -b master && repo sync
+cd ~ && rm -fR yocto-coffee-rpi && mkdir yocto-coffee-rpi && cd yocto-coffee-rpi && repo init -u git@github.com:matthiasklein/meta-yocto-coffee-rpi.git -b kirkstone && repo sync
 ```
 
 Build
