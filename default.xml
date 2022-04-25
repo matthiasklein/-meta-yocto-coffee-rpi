@@ -2,7 +2,7 @@
 <manifest>
 
   <!-- Settings -->
-  <default sync-j="4" revision="master"/>
+  <default sync-j="4" revision="kirkstone"/>
 
   <!-- Remotes -->
   <remote fetch="git://git.openembedded.org"    name="oe"/>
@@ -28,7 +28,7 @@
            path="yocto/meta-rauc"/>
 
   <project remote="code.qt"
-           revision="6.2"
+           revision="6.3"
            name="yocto/meta-qt6.git"
            path="yocto/meta-qt6"/>
 
